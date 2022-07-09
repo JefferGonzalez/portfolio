@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { createBrowserHistory  } from 'history';
 import NavBar from './components/NavBar';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
@@ -12,11 +13,13 @@ import './index.css';
 
 export default function App() {
 
+  const history = createBrowserHistory();
+
   return (
-    <BrowserRouter>
+    <BrowserRouter history={history}>
       <Routes>
-          <Route path="/portfolio/" element={<NavBar/>}>
-            <Route path="/portfolio/" element={<AboutMe/>}/>
+          <Route path="/portfolio" element={<NavBar/>}>
+            <Route path="/portfolio" element={<AboutMe/>}/>
             <Route path="/portfolio/projects" element={<Projects/>}/>
             <Route path="/portfolio/skills" element={<Skills/>}/>
             <Route path="/portfolio/experience" element={<Experience/>}/>
