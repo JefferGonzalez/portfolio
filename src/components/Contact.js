@@ -39,7 +39,7 @@ export default function PersonalData() {
                             <div className="card-body">
                                 <form className="needs-validation" action='https://formsubmit.co/710c0faf70fc7e67f4d459a639c5635e' method='POST' noValidate>
                                     <input type="hidden" name="_subject" value="Mensaje nuevo :3"/>
-                                    <input type="hidden" name="_next" value="http://localhost:3000/thankyou"></input>
+                                    <input type="hidden" name="_next" value="https://jeffergonzalez.github.io/portfolio/thankyou"></input>
                                     <input type="hidden" name="_captcha" value="false"/>
                                     <input type="hidden" name="_template" value="box"/>
                                     <div className="mb-3 has-validation">
