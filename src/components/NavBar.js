@@ -9,6 +9,9 @@ const getRandomColor = () => {
 };
 
 export default function NavBar() {
+    
+    const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+    const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
     const location = useLocation();
     const { pathname } = location;
@@ -94,29 +97,37 @@ export default function NavBar() {
                 <nav className="navbar navbar-expand-lg navbar-dark">
                     <div className="container-fluid">
                         <a className="navbar-brand" target="_blank" href="https://github.com/JefferGonzalez/" rel="noopener noreferrer">Hola, soy Jefferson Gonzalez</a>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <button 
+                            className="navbar-toggler" 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#nav-bar"
+                            aria-controls="nav-bar" 
+                            aria-expanded={!isNavCollapsed ? true : false} 
+                            aria-label="Toggle navigation"
+                            onClick={handleNavCollapse}
+                        >
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div className="collapse navbar-collapse" id="navbarText">
+                        <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="nav-bar">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "" ? "nav-link active" : "nav-link"} aria-current="page" to='/portfolio/'>Inicio</Link>
+                                    <Link className={splitLocation[2] === "" ? "nav-link active" : "nav-link"} aria-current="page" to='/portfolio/' onClick={handleNavCollapse}>Inicio</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "projects" ? "nav-link active" : "nav-link"} to='/portfolio/projects'>Proyectos</Link>
+                                    <Link className={splitLocation[2] === "projects" ? "nav-link active" : "nav-link"} to='/portfolio/projects' onClick={handleNavCollapse}>Proyectos</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "skills" ? "nav-link active" : "nav-link"} to='/portfolio/skills'>Habilidades</Link>
+                                    <Link className={splitLocation[2] === "skills" ? "nav-link active" : "nav-link"} to='/portfolio/skills' onClick={handleNavCollapse}>Habilidades</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "experience" ? "nav-link active" : "nav-link"} to='/portfolio/experience'>Experiencia</Link>
+                                    <Link className={splitLocation[2] === "experience" ? "nav-link active" : "nav-link"} to='/portfolio/experience' onClick={handleNavCollapse}>Experiencia</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "education" ? "nav-link active" : "nav-link"} to='/portfolio/education'>Educación</Link>
+                                    <Link className={splitLocation[2] === "education" ? "nav-link active" : "nav-link"} to='/portfolio/education' onClick={handleNavCollapse}>Educación</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "contact" ? "nav-link active" : "nav-link"} to='/portfolio/contact'>Contacto</Link>
+                                    <Link className={splitLocation[2] === "contact" ? "nav-link active" : "nav-link"} to='/portfolio/contact' onClick={handleNavCollapse}>Contacto</Link>
                                 </li>
                             </ul>
                             <span className="navbar-text">

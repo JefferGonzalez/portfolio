@@ -15,7 +15,7 @@ export default function Experience() {
         <div className="mt-5 p-4">
             {isLoading ? (<Spinner/>) : (
             <div className="mt-5 mb-4 d-flex justify-content-center">
-                <div class="table-responsive">
+                <div className="table-responsive">
                     <table className="table table-striped">
                         <thead>
                             <tr>
