@@ -15,14 +15,14 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-          <Route path="/" element={<NavBar/>}>
-            <Route path="/" element={<AboutMe/>}/>
-            <Route path="/projects" element={<Projects/>}/>
-            <Route path="/skills" element={<Skills/>}/>
-            <Route path="/experience" element={<Experience/>}/>
-            <Route path="/education" element={<Education/>}/>
-            <Route path="/contact" element={<Contact/>}/>
-            <Route path="/thankyou" element={<ThankYou/>}/>
+          <Route path="/portfolio/" element={<NavBar/>}>
+            <Route path="/portfolio/" element={<AboutMe/>}/>
+            <Route path="/portfolio/projects" element={<Projects/>}/>
+            <Route path="/portfolio/skills" element={<Skills/>}/>
+            <Route path="/portfolio/experience" element={<Experience/>}/>
+            <Route path="/portfolio/education" element={<Education/>}/>
+            <Route path="/portfolio/contact" element={<Contact/>}/>
+            <Route path="/portfolio/thankyou" element={<ThankYou/>}/>
           </Route>  
       </Routes>
     </BrowserRouter>

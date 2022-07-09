@@ -101,22 +101,22 @@ export default function NavBar() {
                         <div className="collapse navbar-collapse" id="navbarText">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "" ? "nav-link active" : "nav-link"} aria-current="page" to='/'>Inicio</Link>
+                                    <Link className={splitLocation[1] === "" ? "nav-link active" : "nav-link"} aria-current="page" to='/portfolio/'>Inicio</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "projects" ? "nav-link active" : "nav-link"} to='/projects'>Proyectos</Link>
+                                    <Link className={splitLocation[1] === "projects" ? "nav-link active" : "nav-link"} to='/portfolio/projects'>Proyectos</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "skills" ? "nav-link active" : "nav-link"} to='/skills'>Habilidades</Link>
+                                    <Link className={splitLocation[1] === "skills" ? "nav-link active" : "nav-link"} to='/portfolio/skills'>Habilidades</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "experience" ? "nav-link active" : "nav-link"} to='/experience'>Experiencia</Link>
+                                    <Link className={splitLocation[1] === "experience" ? "nav-link active" : "nav-link"} to='/portfolio/experience'>Experiencia</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "education" ? "nav-link active" : "nav-link"} to='/education'>Educación</Link>
+                                    <Link className={splitLocation[1] === "education" ? "nav-link active" : "nav-link"} to='/portfolio/education'>Educación</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "contact" ? "nav-link active" : "nav-link"} to='/contact'>Contacto</Link>
+                                    <Link className={splitLocation[1] === "contact" ? "nav-link active" : "nav-link"} to='/portfolio/contact'>Contacto</Link>
                                 </li>
                             </ul>
                             <span className="navbar-text">
