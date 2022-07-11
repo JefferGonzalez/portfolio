@@ -24,7 +24,7 @@ export default function AboutMe() {
                                     <img src={Me} alt="Jeffeson David González Cely"/>
                                 </div>
                                 <br/> 
-                                <div className="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center">  
+                                <div className="gap-3 icons d-flex flex-row justify-content-center align-items-center">  
                                     <span>
                                         <a className="link-dark" href="https://github.com/JefferGonzalez" target="_blank" rel="noopener noreferrer"><i className="bi bi-github"></i></a>
                                     </span> 
@@ -39,6 +39,8 @@ export default function AboutMe() {
                                     </span>
                                 </div> 
                                 <span className="arroba">@_JefferGonzalez</span>
+                                <br/>
+                                <a className="btn btn-primary" href="https://drive.google.com/file/d/1F_on-ISJQ9gVsn-w0envkts_OM2990hX/view?usp=sharing" target="_blank">Descargar CV</a>
                             </div> 
                         </div>
                         <div className="col-md-6">
