@@ -1,5 +1,8 @@
 import {useRef, useState, useEffect } from "react";
 import {Link,Outlet,useLocation} from 'react-router-dom';
+import { useTranslation } from "react-i18next";
+
+import Flag from './flag'
 
 const colores = ["red", "green", "blue", "yellow", "purple", "orange", "black", "white", "brown"];
 
@@ -9,7 +12,23 @@ const getRandomColor = () => {
 };
 
 export default function NavBar() {
+
+    const [flag , setFlag] = useState({
+        country : '', alt : '' , lang: 'English'
+    })
     
+    const [t, i18n] = useTranslation("global");
+
+    const changeLanguage = () => {
+        if(flag.country === 'CO'){
+            setFlag({ country: 'US' , alt: 'United State' , lang : 'English'});
+            i18n.changeLanguage("es");
+        }else{
+            setFlag({ country: 'CO' , alt: 'Colombia' , lang : 'Spanish'});
+            i18n.changeLanguage("en");
+        }
+    }
+
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
@@ -96,7 +115,7 @@ export default function NavBar() {
 				}}></canvas>
                 <nav className="navbar navbar-expand-lg navbar-dark">
                     <div className="container-fluid">
-                        <a className="navbar-brand" target="_blank" href="https://github.com/JefferGonzalez/" rel="noopener noreferrer">Hola, soy Jefferson Gonzalez</a>
+                        <a className="navbar-brand" target="_blank" href="https://github.com/JefferGonzalez/" rel="noopener noreferrer">{t("header.hi")}</a>
                         <button 
                             className="navbar-toggler" 
                             type="button" 
@@ -112,32 +131,41 @@ export default function NavBar() {
                         <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="nav-bar">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "" ? "nav-link active" : "nav-link"} to='/' onClick={handleNavCollapse}>Inicio</Link>
+                                    <Link className={splitLocation[1] === "" ? "nav-link active" : "nav-link"} to='/' onClick={handleNavCollapse}>{t("header.home")}</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "projects" ? "nav-link active" : "nav-link"} to='/projects' onClick={handleNavCollapse}>Proyectos</Link>
+                                    <Link className={splitLocation[1] === "projects" ? "nav-link active" : "nav-link"} to='/projects' onClick={handleNavCollapse}>{t("header.projects")}</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "skills" ? "nav-link active" : "nav-link"} to='/skills' onClick={handleNavCollapse}>Habilidades</Link>
+                                    <Link className={splitLocation[1] === "skills" ? "nav-link active" : "nav-link"} to='/skills' onClick={handleNavCollapse}>{t("header.skills")}</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "experience" ? "nav-link active" : "nav-link"} to='/experience' onClick={handleNavCollapse}>Experiencia</Link>
+                                    <Link className={splitLocation[1] === "experience" ? "nav-link active" : "nav-link"} to='/experience' onClick={handleNavCollapse}>{t("header.experience")}</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "education" ? "nav-link active" : "nav-link"} to='/education' onClick={handleNavCollapse}>Educación</Link>
+                                    <Link className={splitLocation[1] === "education" ? "nav-link active" : "nav-link"} to='/education' onClick={handleNavCollapse}>{t("header.education")}</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={splitLocation[1] === "contact" ? "nav-link active" : "nav-link"} to='/contact' onClick={handleNavCollapse}>Contacto</Link>
+                                    <Link className={splitLocation[1] === "contact" ? "nav-link active" : "nav-link"} to='/contact' onClick={handleNavCollapse}>{t("header.contact")}</Link>
                                 </li>
                             </ul>
                             <span className="navbar-text">
-                                BIENVENIDO SUMERCÉ :D
+                                {t("header.welcome")}
                             </span>
                         </div>
                     </div>
                 </nav>
             </div>
             <Outlet />
+            <button className="float-btn tooltipCustom"
+                onClick={changeLanguage}
+            >
+                <Flag
+                    country={(flag.country) ? flag.country : 'US'}
+                    alt={(flag.alt) ? flag.alt : 'United State'}
+                />
+                <span className="tooltiptext">{flag.lang}</span>
+            </button>
         </div>
     )
 
