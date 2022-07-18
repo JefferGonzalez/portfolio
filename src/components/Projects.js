@@ -1,15 +1,21 @@
 import React , {useState, useEffect} from 'react';
+import { useTranslation } from 'react-i18next';
+
 import Spinner from "./Spinner";
 
 import JSONProjects from "../json/projects.js";
 
 export default function Projects() {
 
+    const [t] = useTranslation("global");
+
     const [isLoading, setIsLoading] = useState(true)
   
     useEffect(() => {
         setTimeout((async () => {setIsLoading(false)}),1000)
     }, [isLoading]);
+
+    const data = JSONProjects()[0];
 
     return (
         <div className="mt-5 p-4">
@@ -27,17 +33,15 @@ export default function Projects() {
                         </div>
                         <div className="carousel-inner">
                             {
-                                JSONProjects.map(type => (
-                                    type['Completed'].map(project => (
-                                        <div key={project.id} className={"carousel-item " + (project.id === 1 ? 'active' : '')}>
-                                            <img src={project["url-image"]} className="d-block img-fluid" alt="..."/>
-                                            <div className="carousel-caption d-none d-md-block">
-                                                <h5>{project.name}</h5>
-                                                <p className="fw-bold">{project.description}</p>
-                                                {(project.challenge) ? <p dangerouslySetInnerHTML={{__html:project.challenge}}></p> : 'Más información en proceso...'}
-                                            </div>
+                                data.Completed.map(project => (
+                                    <div key={project.id} className={"carousel-item " + (project.id === 1 ? 'active' : '')}>
+                                        <img src={project["url-image"]} className="d-block img-fluid" alt="..."/>
+                                        <div className="carousel-caption d-none d-md-block">
+                                            <h5>{project.name}</h5>
+                                            <p className="fw-bold">{project.description}</p>
+                                            {(project.challenge) ? <p dangerouslySetInnerHTML={{__html:project.challenge}}></p> : t("actions.info") }
                                         </div>
-                                    ))
+                                    </div>
                                 ))
                             }
                         </div>
@@ -55,9 +59,8 @@ export default function Projects() {
                     <hr className="featurette-divider"/>
                     <div className="container marketing">
                     {
-                        JSONProjects.map(type => (
-                            type['Videos'].map(video => (
-                                <>
+                        data.Videos.map(video => (
+                            <>
                                 <div key={video.id} className="row featurette">
                                     <div className="col-md-5">
                                         <h2 className="featurette-heading fw-normal lh-1">
@@ -84,8 +87,7 @@ export default function Projects() {
                                     </div>
                                 </div>
                                 <hr className="featurette-divider"/>
-                                </>
-                            ))
+                            </>
                         ))
                     }
                     </div>

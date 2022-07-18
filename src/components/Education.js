@@ -1,15 +1,20 @@
 import React , {useState, useEffect} from 'react';
-import Spinner from "./Spinner";
+import { useTranslation } from "react-i18next";
 
+import Spinner from "./Spinner";
 import JSONEducation from './../json/moreInfo'
 
 export default function Education() {
+
+    const [t] = useTranslation("global");
 
     const [isLoading, setIsLoading] = useState(true)
   
     useEffect(() => {
         setTimeout((async () => {setIsLoading(false)}),1000)
     }, [isLoading]);
+
+    const data = JSONEducation()[0];
 
     return (
         <div className="mt-5 p-4">
@@ -19,24 +24,22 @@ export default function Education() {
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th className="w-50">Titulo</th>
-                            <th>Año</th>
-                            <th>Lugar</th>
-                            <th>Certificado</th>
+                            <th className="w-50">{t("table.degree")}</th>
+                            <th>{t("table.year")}</th>
+                            <th>{t("table.place")}</th>
+                            <th>{t("table.certificate")}</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            JSONEducation.map(item => (
-                                item['Education'].map((educatacion, index) => (
-                                    <tr key={educatacion.id}>
-                                        <th scope="row">{index+1}</th>
-                                        <td>{educatacion.academicDegrees}</td>
-                                        <td>{educatacion.year}</td>
-                                        <td><p dangerouslySetInnerHTML={{__html:educatacion.place}}></p></td>
-                                        <td><p dangerouslySetInnerHTML={{__html:educatacion.certificate}}></p></td>
-                                    </tr>
-                                ))
+                            data.Education.map((educatacion , index) => (
+                                <tr key={educatacion.id}>
+                                    <th scope="row">{index+1}</th>
+                                    <td>{educatacion.academicDegrees}</td>
+                                    <td>{educatacion.year}</td>
+                                    <td><p dangerouslySetInnerHTML={{__html:educatacion.place}}></p></td>
+                                    <td><p dangerouslySetInnerHTML={{__html:educatacion.certificate}}></p></td>
+                                </tr>
                             ))
                         }
                     </tbody>

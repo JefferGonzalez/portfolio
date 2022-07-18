@@ -1,9 +1,13 @@
 import React , {useState, useEffect} from 'react';
+import { useTranslation } from 'react-i18next';
+
 import Spinner from "./Spinner";
 
 import Me from './../resources/img/yo.jpg';
 
 export default function AboutMe() {
+
+    const [t] = useTranslation("global");
 
     const [isLoading, setIsLoading] = useState(true)
   
@@ -46,22 +50,16 @@ export default function AboutMe() {
                         <div className="col-md-6">
                             <div className="text mt-3"> 
                             <span>
-                                Soy un joven colombiano de  20 años que sueña con convertirse en DESARROLLADOR DE SOFTWARE.
+                                {t("home.about-me.paragraph-1")}
                                 <br/>
                                 <br/>
-                                Tengo un conjunto diversas habilidades, que van desde los conceptos básicos del diseño Front-End con 
-                                HTML, CSS y JavaScript hasta el desarrollo backend con PHP. 
-                                Actualmente me encuentro estudiando los conceptos básicos de programación 
-                                Back-End con Spring Boot (Java) y Node.js
+                                {t("home.about-me.paragraph-2")}
                                 <br/>
                                 <br/>
-                                El motivo por el cual estoy explorando el desarrollo web, es para poder ganar experiencia en este mundo llamado programación. 
-                                Mi ideal a futuro es dedicarme al desarrollo de Inteligencia Artificial.
+                                {t("home.about-me.paragraph-3")}
                                 <br/>
                                 <br/>
-                                <span className='text-primary'>
-                                Dale click al canvas :D
-                                </span>
+                                <span className='text-primary'>{t("actions.click-me")}</span>
                             </span>
                             </div>
                         </div>
