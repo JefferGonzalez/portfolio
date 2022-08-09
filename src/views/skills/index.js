@@ -1,6 +1,6 @@
 import React from "react";
 /*----- components ------ */
-import Spinner from "../../components/Spinner";
+import Spinner from "../../components/spinner/";
 /*----- hooks ------ */
 import useLoadingHook from "../../hooks/useLoading";
 import useTranslationHook from "../../hooks/useTranslation";
