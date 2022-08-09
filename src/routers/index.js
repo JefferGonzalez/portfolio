@@ -1,15 +1,15 @@
-import AboutMe from '../components/AboutMe';
-import Projects from '../components/Projects';
-import Skills from '../components/Skills';
-import Experience from '../components/Experience';
-import Education from '../components/Education';
-import Contact from '../components/Contact';
-import ThankYou from '../components/ThankYou';
+import Home from '../views/home';
+import Projects from '../views/projects';
+import Skills from '../views/skills';
+import Experience from '../views/experience';
+import Education from '../views/education';
+import Contact from '../views/contact';
+import ThankYou from '../views/thank-you';
 
 const Routers = [
     {
         path: "/",
-        element: <AboutMe/>
+        element: <Home/>
     },
     {
         path: "/projects",
