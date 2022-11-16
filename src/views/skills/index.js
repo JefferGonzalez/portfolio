@@ -1,10 +1,12 @@
 import React from "react";
+import "react-lazy-load-image-component/src/effects/blur.css";
 /*----- components ------ */
 import Spinner from "../../components/spinner/";
 /*----- hooks ------ */
 import useLoadingHook from "../../hooks/useLoading";
 import useTranslationHook from "../../hooks/useTranslation";
 /*----- utils ------ */
+import { LazyLoadingImage } from "../../utils/lazy-load-image";
 import Main from "../../utils/main-div";
 /*----- JSON ------- */
 import JSONSkills from "../../json/skills.js";
@@ -22,9 +24,7 @@ function Skills() {
       ) : (
         <div className="container">
           <div className="d-flex justify-content-center">
-            <h2 id="skills">
-              {t("skills.title")}
-            </h2>
+            <h2 id="skills">{t("skills.title")}</h2>
           </div>
           <div className="row">
             {JSONSkills.map((type) =>
@@ -35,10 +35,9 @@ function Skills() {
                   style={{ width: "11rem" }}
                 >
                   <div className="card w-100 h-100 justify-content-center ">
-                    <img
+                    <LazyLoadingImage
                       src={skill["url-image"]}
-                      className="card-img-top border-none"
-                      alt="Logo of HTML-5"
+                      alt={skill["name"]}
                     />
                     <span className="tooltiptext">{skill.name}</span>
                   </div>
@@ -54,10 +53,9 @@ function Skills() {
                   style={{ width: "11rem" }}
                 >
                   <div className="card w-100 h-100 justify-content-center ">
-                    <img
+                    <LazyLoadingImage
                       src={skill["url-image"]}
-                      className="card-img-top border-none"
-                      alt="Logo of HTML-5"
+                      alt={skill["name"]}
                     />
                     <span className="tooltiptext">{skill.name}</span>
                   </div>
@@ -73,10 +71,9 @@ function Skills() {
                 style={{ width: "11rem" }}
               >
                 <div className="card w-100 h-100">
-                  <img
+                  <LazyLoadingImage
                     src={Adobe_Photoshop_CC}
-                    className="card-img-top border-none"
-                    alt="Logo of HTML-5"
+                    alt="Adobe Photoshop CC"
                   />
                   <span className="tooltiptext">Adobe Photoshop</span>
                 </div>
