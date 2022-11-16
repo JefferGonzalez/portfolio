@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1ded542f.css",
-    "main.js": "/portfolio/static/js/main.c63331c0.js",
+    "main.css": "/portfolio/static/css/main.0fd282d6.css",
+    "main.js": "/portfolio/static/js/main.e06e7ebd.js",
     "static/media/Xue-PHP.mov": "/portfolio/static/media/Xue-PHP.492ce720cfd1fe42aa59.mov",
     "static/media/Challenge-Alkemy.mov": "/portfolio/static/media/Challenge-Alkemy.2bd00edebff7221854a7.mov",
     "static/media/DIPLOMA.pdf": "/portfolio/static/media/DIPLOMA.44a718087b9ba8bfcd3b.pdf",
@@ -28,11 +28,11 @@
     "static/media/CSS-3.png": "/portfolio/static/media/CSS-3.955de666fb9db9a9ceb8.png",
     "static/media/SQL.png": "/portfolio/static/media/SQL.8420d0dca50e230fccc6.png",
     "index.html": "/portfolio/index.html",
-    "main.1ded542f.css.map": "/portfolio/static/css/main.1ded542f.css.map",
-    "main.c63331c0.js.map": "/portfolio/static/js/main.c63331c0.js.map"
+    "main.0fd282d6.css.map": "/portfolio/static/css/main.0fd282d6.css.map",
+    "main.e06e7ebd.js.map": "/portfolio/static/js/main.e06e7ebd.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ded542f.css",
-    "static/js/main.c63331c0.js"
+    "static/css/main.0fd282d6.css",
+    "static/js/main.e06e7ebd.js"
   ]
 }
