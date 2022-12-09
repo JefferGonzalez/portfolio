@@ -65,6 +65,7 @@ function Home() {
                   </span>
                 </div>
                 <span className="arroba">@_JefferGonzalez</span>
+                <span className="fw-bolder">Full Stack Developer</span>
                 <br />
                 <a
                   className="btn btn-primary"

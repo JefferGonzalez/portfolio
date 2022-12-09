@@ -1,110 +1,109 @@
 {
-    "header": {
-        "hi": "Hi, i am Jefferson Gonzalez",
-        "home": "Home",
-        "projects" : "Projects",
-        "skills" : "Skills",
-        "experience" : "Experience",
-        "education" : "Education",
-        "contact" : "Contact",
-        "welcome" : "WELCOME SUMERCED :D"
-     },
-     "home": {
-        "about-me" : {
-            "paragraph-1": "I am a 20 years old Colombian who dreams of becoming a SOFTWARE DEVELOPER.",
-            "paragraph-2": "I have a diverse skill set, ranging from the basics of Front-End design with HTML, CSS, and JavaScript to backend development with PHP. I am currently studying the basic concepts of Back-End programming with Spring Boot (Java) and Node.js",
-            "paragraph-3": "The reason why I am exploring web development is so that I can gain experience in this world called programming. My future ideal is to dedicate myself to the development of Artificial Intelligence."
-        }
-     },
-     "skills" : {
-        "title" : "SKILLS AND KNOWLEDGE",
-        "currently-learning" : "Currently Learning",
-        "tools" : "Tools"
-     },
-     "contact": {
-        "title" : "Get in touch",
-        "enter-your-email" : "Enter your email",
-        "message" : "Message",
-        "more-about-me" : {
-            "title" : "More about me :)",
-            "name" : "Name",
-            "age" : "Age",
-            "nationality" : "Nationality",
-            "language" : "Language",
-            "email" : "Email",
-            "address" : "Address"
-        },
-        "data" : {
-            "age" : "20 years old",
-            "nationality" : "Colombian",
-            "language" : "Spanish(Native) - English (B1)"
-        },
-        "thank-you" : {
-            "title" : "Thanks for contacting me.",
-            "paragraph" : "Soon I will be answering your request."
-        }
-
-     },
-     "moreInfo": {
-         "academicDegrees": {
-            "high-school-graduate" : "High School Graduate",
-            "technologist" : "Technologist in Analysis and Development of Information Systems",
-            "photoshop" : "Course on Fundamental Tools for Working with Images in Photoshop",
-            "ef-set" : "EF SET Certificate (English)"
-         },
-         "jobs" : {
-            "SURA" : {
-                "job-title" : "Systems Assistant (Trainee)",
-                "description" : "I carried out the development of a web tool that sought to streamline some internal processes in the Human Talent area."
-            }
-        }
-     },
-     "actions": {
-        "btn-download" : "DOWNLOAD",
-        "btn-certificate" : "DOWNLOAD",
-        "process" : "In process",
-        "btn-send": "SEND",
-        "click-me": "Click on the canvas :D",
-        "info" : "More information in process...",
-        "btn-repo" : "SEE REPOSITORY",
-        "btn-no-repo" : "REPOSITORY IN PROCESS"
-     },
-     "table": {
-         "degree" : "Degree",
-         "year" : "Year",
-         "place": "Place",
-         "certificate" : "Certificate",
-         "job-title" : "Job Title",
-         "description" : "Description"
-     },
-     "time": {
-        "months" : "months",
-        "years" : "years",
-         "january" : "January",
-         "february" : "February",
-         "march" : "March",
-         "april" : "April",
-         "may" : "May",
-         "june" : "June",
-         "july" : "July",
-         "august" : "August",
-         "september" : "September",
-         "octuber" : "Octuber",
-         "november" : "November",
-         "december": "December"
-     },
-     "projects": {
-        "XUE-PHP" : {
-            "title" : "Control of Clinical Providers",
-            "description" : "Initial project that arose when trying to solve the need that was raised in my experience as an trainne in "
-        },
-        "ABM-OPERATIONS" : {
-            "title" : "Challenge FullStack JS by Alkemy",
-            "description" : "Made for the Challenge Fullstack JS of"
-        },
-        "TASK-LIST-APP" : {
-            "title" : "Task App",
-            "description" : "Based on the video of"
-        }
+  "header": {
+    "hi": "Hi, i am Jefferson Gonzalez",
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact",
+    "welcome": "WELCOME SUMERCED :D"
+  },
+  "home": {
+    "about-me": {
+      "paragraph-1": "I am a 20 years old Colombian who dreams of becoming a SOFTWARE DEVELOPER.",
+      "paragraph-2": "I am passionate about software development, and I love learning new things, so I am always looking for new opportunities to continue growing as a professional.",
+      "paragraph-3": "I have a diverse skill set, ranging from the basics of Front-End design with HTML, CSS, and JavaScript in conjunction with the React.js library to backend development with PHP and JavaScript with Node.js (Express.js)"
     }
+  },
+  "skills": {
+    "title": "SKILLS AND KNOWLEDGE",
+    "currently-learning": "Currently Learning",
+    "tools": "Tools"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "enter-your-email": "Enter your email",
+    "message": "Message",
+    "more-about-me": {
+      "title": "More about me :)",
+      "name": "Name",
+      "age": "Age",
+      "nationality": "Nationality",
+      "language": "Language",
+      "email": "Email",
+      "address": "Address"
+    },
+    "data": {
+      "age": "20 years old",
+      "nationality": "Colombian",
+      "language": "Spanish(Native) - English (B1)"
+    },
+    "thank-you": {
+      "title": "Thanks for contacting me.",
+      "paragraph": "Soon I will be answering your request."
+    }
+  },
+  "moreInfo": {
+    "academicDegrees": {
+      "high-school-graduate": "High School Graduate",
+      "technologist": "Technologist in Analysis and Development of Information Systems",
+      "photoshop": "Course on Fundamental Tools for Working with Images in Photoshop",
+      "ef-set": "EF SET Certificate (English)"
+    },
+    "jobs": {
+      "SURA": {
+        "job-title": "Systems Assistant (Trainee)",
+        "description": "I carried out the development of a web tool that sought to streamline some internal processes in the Human Talent area."
+      }
+    }
+  },
+  "actions": {
+    "btn-download": "DOWNLOAD",
+    "btn-certificate": "DOWNLOAD",
+    "process": "In process",
+    "btn-send": "SEND",
+    "click-me": "Click on the canvas :D",
+    "info": "More information in process...",
+    "btn-repo": "SEE REPOSITORY",
+    "btn-no-repo": "REPOSITORY IN PROCESS"
+  },
+  "table": {
+    "degree": "Degree",
+    "year": "Year",
+    "place": "Place",
+    "certificate": "Certificate",
+    "job-title": "Job Title",
+    "description": "Description"
+  },
+  "time": {
+    "months": "months",
+    "years": "years",
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "octuber": "Octuber",
+    "november": "November",
+    "december": "December"
+  },
+  "projects": {
+    "XUE-PHP": {
+      "title": "Control of Clinical Providers",
+      "description": "Initial project that arose when trying to solve the need that was raised in my experience as an trainne in "
+    },
+    "ABM-OPERATIONS": {
+      "title": "Challenge FullStack JS by Alkemy",
+      "description": "Made for the Challenge Fullstack JS of"
+    },
+    "TASK-LIST-APP": {
+      "title": "Task App",
+      "description": "Based on the video of"
+    }
+  }
 }
