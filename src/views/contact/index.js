@@ -155,7 +155,7 @@ function Contact() {
                     <span className="badge bg-primary rounded-pill">
                       {t("contact.more-about-me.address")}
                     </span>
-                    Sogamoso, Boyacá - Colombia
+                    Bogotá D.C - Colombia
                   </li>
                 </ul>
               </div>
