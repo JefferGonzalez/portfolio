@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0fd282d6.css",
-    "main.js": "/portfolio/static/js/main.c743d850.js",
+    "main.js": "/portfolio/static/js/main.8bbd0462.js",
     "static/media/Xue-PHP.mov": "/portfolio/static/media/Xue-PHP.492ce720cfd1fe42aa59.mov",
     "static/media/Challenge-Alkemy.mov": "/portfolio/static/media/Challenge-Alkemy.2bd00edebff7221854a7.mov",
     "static/media/DIPLOMA.pdf": "/portfolio/static/media/DIPLOMA.44a718087b9ba8bfcd3b.pdf",
@@ -30,10 +30,10 @@
     "static/media/SQL.png": "/portfolio/static/media/SQL.8420d0dca50e230fccc6.png",
     "index.html": "/portfolio/index.html",
     "main.0fd282d6.css.map": "/portfolio/static/css/main.0fd282d6.css.map",
-    "main.c743d850.js.map": "/portfolio/static/js/main.c743d850.js.map"
+    "main.8bbd0462.js.map": "/portfolio/static/js/main.8bbd0462.js.map"
   },
   "entrypoints": [
     "static/css/main.0fd282d6.css",
-    "static/js/main.c743d850.js"
+    "static/js/main.8bbd0462.js"
   ]
 }
