@@ -60,7 +60,7 @@ function Contact() {
                   <input
                     type="hidden"
                     name="_next"
-                    value="https://jeffergonzalez.github.io/portfolio/thankyou"
+                    value="https://jeffergonzalez.github.io/portfolio#/thankyou"
                   ></input>
                   <input type="hidden" name="_captcha" value="false" />
                   <input type="hidden" name="_template" value="box" />

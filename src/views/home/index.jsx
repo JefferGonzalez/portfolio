@@ -1,11 +1,10 @@
-import React from "react";
 /*----- components ------ */
-import Spinner from "../../components/spinner/";
+import Spinner from "../../components/spinner";
 /*----- hooks ------ */
 import useLoadingHook from "../../hooks/useLoading";
 import useTranslationHook from "../../hooks/useTranslation";
 /*----- images ------*/
-import Me from '../../resources/img/yo.jpg';
+import Me from "./../../assets/img/yo.jpg";
 /*----- utils ------ */
 import Main from "../../utils/main-div";
 
@@ -14,7 +13,9 @@ function Home() {
   const [isLoading] = useLoadingHook();
   return (
     <>
-      {isLoading ? (<Spinner />) : (
+      {isLoading ? (
+        <Spinner />
+      ) : (
         <div className="card p-2">
           <div className="row">
             <div className="col-md-6">

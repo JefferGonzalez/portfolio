@@ -8,6 +8,6 @@ const useLoading = () => {
   }, 1000);
 
   return [isLoading];
-}
+};
 
 export default useLoading;

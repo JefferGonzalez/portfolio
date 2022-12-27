@@ -1,4 +1,3 @@
-import React from "react";
 /*----- components ------ */
 import Spinner from "../../components/spinner/";
 /*----- hooks ------ */
@@ -12,7 +11,7 @@ import JSONProjects from "../../json/projects.js";
 function Projects() {
   const [t] = useTranslationHook();
   const [isLoading] = useLoadingHook();
-  const data = JSONProjects()[0];
+  const data = JSONProjects();
 
   return (
     <>
@@ -48,7 +47,7 @@ function Projects() {
               ></button>
             </div>
             <div className="carousel-inner">
-              {data.Completed.map((project) => (
+              {data && data?.Completed.map((project) => (
                 <div
                   key={project.id}
                   className={
@@ -103,7 +102,7 @@ function Projects() {
           </div>
           <hr className="featurette-divider" />
           <div className="container marketing">
-            {data.Videos.map((video) => (
+            {data && data?.Videos.map((video) => (
               <>
                 <div key={video.id} className="row featurette">
                   <div className="col-md-5">

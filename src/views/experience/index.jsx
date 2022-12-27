@@ -12,7 +12,7 @@ import JSONExperience from "../../json/moreInfo";
 function Experience() {
   const [t] = useTranslationHook();
   const [isLoading] = useLoadingHook();
-  const data = JSONExperience()[0];
+  const { Experience } = JSONExperience();
 
   return (
     <>
@@ -32,26 +32,27 @@ function Experience() {
               </tr>
             </thead>
             <tbody>
-              {data.Experience.map((experience, index) => (
-                <tr key={experience.id}>
-                  <th scope="row">{index + 1}</th>
-                  <td>{experience.position}</td>
-                  <td>{experience.description}</td>
-                  <td>{experience.year}</td>
-                  <td>
-                    <p
-                      dangerouslySetInnerHTML={{ __html: experience.place }}
-                    ></p>
-                  </td>
-                  <td>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: experience.certificate,
-                      }}
-                    ></p>
-                  </td>
-                </tr>
-              ))}
+              {Experience &&
+                Experience.map((experience, index) => (
+                  <tr key={experience.id}>
+                    <th scope="row">{index + 1}</th>
+                    <td>{experience.position}</td>
+                    <td>{experience.description}</td>
+                    <td>{experience.year}</td>
+                    <td>
+                      <p
+                        dangerouslySetInnerHTML={{ __html: experience.place }}
+                      ></p>
+                    </td>
+                    <td>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: experience.certificate,
+                        }}
+                      ></p>
+                    </td>
+                  </tr>
+                ))}
             </tbody>
           </table>
         </div>

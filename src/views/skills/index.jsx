@@ -11,7 +11,7 @@ import Main from "../../utils/main-div";
 /*----- JSON ------- */
 import JSONSkills from "../../json/skills.js";
 /*----- Image ------ */
-import Adobe_Photoshop_CC from "../../resources/img/skills/Adobe_Photoshop_CC.png";
+import Adobe_Photoshop_CC from "./../../assets/img/skills/Adobe_Photoshop_CC.png";
 
 function Skills() {
   const [t] = useTranslationHook();

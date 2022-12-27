@@ -12,7 +12,7 @@ import JSONEducation from "../../json/moreInfo";
 function Education() {
   const [t] = useTranslationHook();
   const [isLoading] = useLoadingHook();
-  const data = JSONEducation()[0];
+  const { Education } = JSONEducation();
 
   return (
     <>
@@ -31,25 +31,26 @@ function Education() {
               </tr>
             </thead>
             <tbody>
-              {data.Education.map((educatacion, index) => (
-                <tr key={educatacion.id}>
-                  <th scope="row">{index + 1}</th>
-                  <td>{educatacion.academicDegrees}</td>
-                  <td>{educatacion.year}</td>
-                  <td>
-                    <p
-                      dangerouslySetInnerHTML={{ __html: educatacion.place }}
-                    ></p>
-                  </td>
-                  <td>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: educatacion.certificate,
-                      }}
-                    ></p>
-                  </td>
-                </tr>
-              ))}
+              {Education &&
+                Education.map((educatacion, index) => (
+                  <tr key={educatacion.id}>
+                    <th scope="row">{index + 1}</th>
+                    <td>{educatacion.academicDegrees}</td>
+                    <td>{educatacion.year}</td>
+                    <td>
+                      <p
+                        dangerouslySetInnerHTML={{ __html: educatacion.place }}
+                      ></p>
+                    </td>
+                    <td>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: educatacion.certificate,
+                        }}
+                      ></p>
+                    </td>
+                  </tr>
+                ))}
             </tbody>
           </table>
         </div>

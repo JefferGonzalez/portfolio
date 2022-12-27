@@ -1,15 +1,13 @@
-import React , { useState } from "react";
-import { Outlet } from 'react-router-dom';
+import React, { useState } from "react";
+import { Outlet } from "react-router-dom";
 import useTranslation from "../../hooks/useTranslation";
 
-import SVG from "../../utils/svg";
 import Matrix from "../canva";
 import NavBar from "../nav-bar";
 import Flag from "../flag";
 
 export default function Header() {
-  
-  const {i18n} = useTranslation();
+  const { i18n } = useTranslation();
 
   const [flag, setFlag] = useState({
     country: "US",
@@ -29,17 +27,13 @@ export default function Header() {
 
   return (
     <>
-      <SVG />
       <div className="bg-dark fixed-top">
         <Matrix />
         <NavBar />
       </div>
       <Outlet />
       <button className="float-btn tooltipCustom" onClick={changeLanguage}>
-        <Flag
-          country={flag.country}
-          alt={flag.alt}
-        />
+        <Flag country={flag.country} alt={flag.alt} />
         <span className="tooltiptext">{flag.lang}</span>
       </button>
     </>

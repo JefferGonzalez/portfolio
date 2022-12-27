@@ -31,7 +31,7 @@ export default function Matrix() {
         (y > 100 + Math.random() * 10000) ? positionY[index] = 0 : positionY[index] = y + 20;
       });
     };
-
+ 
     setInterval(matrix, 50);
     setCanvasContext(obj2D);
   }, [canvasRef]);
