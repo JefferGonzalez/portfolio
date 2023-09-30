@@ -8,7 +8,7 @@ import Me from "./../../assets/img/yo.jpg";
 /*----- utils ------ */
 import Main from "../../utils/main-div";
 
-function Home() {
+function Home () {
   const [t] = useTranslationHook();
   const [isLoading] = useLoadingHook();
   return (
@@ -37,6 +37,15 @@ function Home() {
                   </span>
                   <span>
                     <a
+                      href="https://www.linkedin.com/in/jeffergonzalez"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="bi bi-linkedin"></i>
+                    </a>
+                  </span>
+                  <span>
+                    <a
                       className="link-success"
                       href="https://api.whatsapp.com/send?phone=573118810950"
                       target="_blank"
@@ -47,21 +56,12 @@ function Home() {
                   </span>
                   <span>
                     <a
-                      href="https://www.linkedin.com/in/jeffergonzalez"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="bi bi-linkedin"></i>
-                    </a>
-                  </span>
-                  <span>
-                    <a
-                      className="link-info"
+                      className="link-dark"
                       href="https://twitter.com/_JefferGonzalez"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <i className="bi bi-twitter"></i>
+                      <i className="bi bi-twitter-x"></i>
                     </a>
                   </span>
                 </div>
