@@ -1,7 +1,7 @@
 <h1 align="center">👋 Hi, I’m Jeffer</h1>
 
 - 👀 I’m interested in learn to code.
-- 👾 I’m currently working on a social network with PERN Stack.
+- 👾 I'm currently working on myself.
 - 🌱 I’m currently learning english, JavaScript (Express, React).
 - 📫 How to reach me: jefferd2016@gmail.com
 
