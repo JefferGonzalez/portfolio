@@ -92,6 +92,10 @@
     "december": "Diciembre"
   },
   "projects": {
+    "READING-LIST-APP": {
+      "title": "Aplicación de lista de lecturas",
+      "description": "Basado en el reto de pruebas técnicas de"
+    },
     "XUE-PHP": {
       "title": "Control de Proveedores Clinicos",
       "description": "Proyecto inicial que surgio al tratar la solucionar la necesidad que me plantearon en mi experiencia como aprendiz en"

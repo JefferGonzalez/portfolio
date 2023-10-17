@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 
+import ReadingList from "./../assets/img/projects/ReadingList.png";
 import XUE_IMAGE from "./../assets/img/projects/XUE-PHP.png";
 import XUE_VIDEO from "./../assets/video/Xue-PHP.mov";
 import ABM_IMAGE from "./../assets/img/projects/ALKEMY_CHALLENGE.png";
@@ -14,12 +15,18 @@ function JSONProjects() {
     Completed: [
       {
         id: 1,
+        name : "Reading List App",
+        "url-image": ReadingList,
+        description: "React, BootStrap, Drag and Drop, LocalStorage, Driver.js",
+      },
+      {
+        id: 2,
         name: "XUE",
         "url-image": XUE_IMAGE,
         description: "HTML, Bootstrap, jQuery y PHP8/MySQL - MVC/CRUD",
       },
       {
-        id: 2,
+        id: 3,
         name: "ABM OPERATIONS",
         "url-image": ABM_IMAGE,
         description: "React, BootStrap, Node.js, Express.js/MySQL y Auth0.",
@@ -28,7 +35,7 @@ function JSONProjects() {
         )} <a class='text-decoration-none' href='https://www.alkemy.org/' target='_blank'>Alkemy</a>`,
       },
       {
-        id: 3,
+        id: 4,
         name: "TaskList App",
         "url-image": TaskListImage,
         description: "React, Material UI, Node.js y Express.js/MySQL - CRUD",
@@ -40,6 +47,18 @@ function JSONProjects() {
     Videos: [
       {
         id: 1,
+        name: "Reading List App ",
+        description: t("projects.READING-LIST-APP.title"),
+        text: `${t(
+          "projects.READING-LIST-APP.description"
+        )} <a class='text-decoration-none' href='https://pruebastecnicas.com/' target='_blank'>midudev</a>`,
+        url: null,
+        repository: `<a href='https://github.com/JefferGonzalez/reading-list' class='btn btn-outline-primary' role='button' target='_blank'>${t(
+          "actions.btn-repo"
+        )}</a>`,
+      },
+      {
+        id: 2,
         name: "XUE-PHP ",
         description: t("projects.XUE-PHP.title"),
         text: `${t(
@@ -51,7 +70,7 @@ function JSONProjects() {
         )}</button>`,
       },
       {
-        id: 2,
+        id: 3,
         name: "ABM OF OPERATIONS ",
         description: t("projects.ABM-OPERATIONS.title"),
         text: `${t(
@@ -63,7 +82,7 @@ function JSONProjects() {
         )}</a>`,
       },
       {
-        id: 3,
+        id: 4,
         name: "Task List App ",
         description: t("projects.TASK-LIST-APP.title"),
         text: `${t(

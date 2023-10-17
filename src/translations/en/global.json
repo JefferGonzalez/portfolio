@@ -92,6 +92,10 @@
     "december": "December"
   },
   "projects": {
+    "READING-LIST-APP": {
+      "title": "Reading List App",
+      "description": "Based on the challenge of technical tests of"
+    },
     "XUE-PHP": {
       "title": "Control of Clinical Providers",
       "description": "Initial project that arose when trying to solve the need that was raised in my experience as an trainne in "
