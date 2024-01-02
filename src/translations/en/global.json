@@ -14,6 +14,11 @@
       "paragraph-1": "I am a 21 years old Colombian who dreams of becoming a SOFTWARE DEVELOPER.",
       "paragraph-2": "I am passionate about software development, and I love learning new things, so I am always looking for new opportunities to continue growing as a professional.",
       "paragraph-3": "I have a diverse skill set, ranging from the basics of Front-End design with HTML, CSS, and JavaScript in conjunction with the React.js library to backend development with Java and JavaScript with Node.js (Express.js)"
+    },
+    "modal-advertisement": {
+      "title": "🥳 Hello, I have news for you",
+      "description": "I have published a new version of my website, you can see it at the following link: ",
+      "paragraph": "Aun asi, esta versión seguirá estando disponible. 😊"
     }
   },
   "skills": {
@@ -65,7 +70,8 @@
     "click-me": "Click on the canvas :D",
     "info": "More information in process...",
     "btn-repo": "SEE REPOSITORY",
-    "btn-no-repo": "REPOSITORY IN PROCESS"
+    "btn-no-repo": "REPOSITORY IN PROCESS",
+    "btn-close": "CLOSE"
   },
   "table": {
     "degree": "Degree",
